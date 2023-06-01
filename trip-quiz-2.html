@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="trip-quiz-2.js" defer></script>
+    <link rel="stylesheet" href="trip-quiz-2.css" />
+</head>
+<header>
+    
+    <input type="checkbox" id="toggle-theme" name="moon"/>
+    <label for="toggle-theme"><img class="moon" src="moon.svg"><img class="sun" src="sun.svg"></label>
+    
+</header>
+<body>
+
+    <div class="screen" data-theme="checked">
+
+        <div class="q">
+            <p>Kurš galamēķis atrodas uz 17 508 salām?</p>
+
+            <form class="question salas">
+                <div class="questions"><input type="radio" name="1jautajums" onchange="handleChange('1jautajums','Indonēzija')" value="Igaunija"> Igaunija</div>
+                <div class="questions"><input type="radio" name="1jautajums" onchange="handleChange('1jautajums','Indonēzija')" value="Lielbritānija"> Lielbritānija</div>
+                <div class="questions"><input type="radio" name="1jautajums" onchange="handleChange('1jautajums','Indonēzija')" value="Liepāja"> Liepāja</div>
+                <div class="questions correct"><input type="radio" name="1jautajums" onchange="handleChange('1jautajums','Indonēzija')" value="Indonēzija"> Indonēzija</div>
+            </form>
+        </div>
+
+
+        <div class="q">
+            <p>Kurš galamērķis ir vienlaicīgi gan kontinents, gan valsts?</p>
+
+            <form class="question kontinenti">
+                <div class="questions1"><input type="radio" name="2jautajums" onchange="handleChange('2jautajums','Austrālija')" value="Liepāja"> Liepāja</div>
+                <div class="questions1 correct1"><input type="radio" name="2jautajums" onchange="handleChange('2jautajums','Austrālija')" value="Austrālija"> Austrālija</div>
+                <div class="questions1"><input type="radio" name="2jautajums" onchange="handleChange('2jautajums','Austrālija')" value="Lietuva"> Lietuva</div>
+                <div class="questions1"><input type="radio" name="2jautajums" onchange="handleChange('2jautajums','Austrālija')" value="Kanāda"> Kanāda</div>
+            </form>
+        </div>
+
+
+        <div class="q">
+            <p>Pie kura galamērķa ir īpašī aizsargājama ūdensputnu ligzdošanas teritorija, kas iekļauta "Natura 2000"?</p>
+
+            <form class="question putni">
+                <div class="questions2"><input type="radio" name="3jautajums" onchange="handleChange('3jautajums','Liepāja')" value="Lībija"> Lībija</div>
+                <div class="questions2"><input type="radio" name="3jautajums" onchange="handleChange('3jautajums','Liepāja')" value="Ķīna"> Ķīna</div>
+                <div class="questions2 correct2"><input type="radio" name="3jautajums" onchange="handleChange('3jautajums','Liepāja')" value="Liepāja"> Liepāja</div>
+                <div class="questions2"><input type="radio" name="3jautajums" onchange="handleChange('3jautajums','Liepāja')" value="Čīle"> Čīle</div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
